@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
   # get 'homepage/index'
 
-  root 'homepage#index'
+  scope "(:locale)", locale: /en|it/ do
+    
+    # root 'homepage#index'
+    get 'homepage/index'
   
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

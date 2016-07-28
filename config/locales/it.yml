@@ -19,8 +19,8 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+it:
   homepage:
     index:
-      first_header: "This is the homepage"
-      first_paragraph: "the text will be taken from the database, but some messages are passed by the application and is therefore well that are translated to be ready to support more languages."
+      first_header: "Questa è l'homepage"
+      first_paragraph: "il testo verrà preso dal database ma alcuni messaggi sono passati dall'applicazione ed è quindi bene che vengano tradotti per essere pronti a supportare più lingue."

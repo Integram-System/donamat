@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,6 +25,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # figaro - configuration framework - imposta le Environment Variables - ENV["SECRET_PASSWORD"]
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+# Needed on Heroku. Enables serving assets in production and setting your logger to standard out.
+gem 'rails_12factor', '~> 0.0.3',   group: :production
+
+# Fast, threaded, and highly concurrent web server. Suggested by Heroku
+gem 'puma', '~> 3.6', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
